@@ -136,7 +136,7 @@ dnRes
 diffRes <- runTest(diffGOdata, algorithm = "weight01", statistic = "fisher")
 diffRes
 
-
+cat("Pulling additional helper functions for creating GO bar plots.\nSee plot_enrichment.r script in repo")
 source("~/Documents/Elysium/plot_enrichment.r")
 upGOdf = enrichment_df(upGOdata, upRes, numChar = 50, orderBy = "Scores")
 upGOdf = upGOdf[!upGOdf$Term=="biological_process",]
